@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background: #7a75d1;
+}
+
+.wrapper{
+	width: 850px;
+	margin: 200px auto;
+}
+
+.main_title{
+	font-size: 32px;
+	color: #fff;
+	letter-spacing: 2px;
+	background: #edc856;
+	padding: 15px 25px; 
+	border-radius: 3px;
+	text-align: center;
+	width: 700px;
+	margin: 0 auto 25px;
+}
+
+.accordion_wrap ul{
+	display: flex;
+	justify-content: center;
+}
+
+.accordion_wrap .accordion_item{
+	list-style: none;
+	width: 100px;
+	height: 175px;
+	background: #edc856;
+	border-right: 1px solid #a48d2d;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.2s linear;
+}
+
+.accordion_wrap .accordion_item:hover,
+.accordion_wrap li.active .accordion_item{
+	background: #a48d2d;
+	border-right: 1px solid #edc856;
+}
+
+.accordion_wrap li:first-child .accordion_item{
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.accordion_wrap li:last-child .accordion_item,
+.accordion_wrap li:last-child .accordion_menu{
+	border-right: 0px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.accordion_wrap ul li .icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url('100.png');
+}
+
+.accordion_wrap ul li.walk .icon{
+	background-position: 0 0;
+	width: 20px;
+	height: 43px;
+}
+
+.accordion_wrap ul li.bicycle .icon{
+	background-position: 0 -56px;
+	width: 43px;
+	height: 28px;
+}
+
+.accordion_wrap ul li.bike .icon{
+	background-position: 0 -96px;
+	width: 43px;
+	height: 32px;
+}
+
+.accordion_wrap ul li.car .icon{
+	background-position: 0 -141px;
+	width: 43px;
+	height: 24px;
+}
+
+.accordion_wrap ul li.train .icon{
+	background-position: 0 -178px;
+	width: 43px;
+	height: 33px;
+}
+
+.accordion_wrap ul li.aeroplane .icon{
+	background-position: 0 -224px;
+	width: 43px;
+	height: 43px;
+}
+
+.accordion_wrap ul li.walk .accordion_item:hover .icon,
+.accordion_wrap ul li.walk.active .icon{
+	background-position: -57px 0;
+}
+
+.accordion_wrap ul li.bicycle .accordion_item:hover .icon,
+.accordion_wrap ul li.bicycle.active .icon{
+	background-position: -57px -56px;
+}
+
+.accordion_wrap ul li.bike .accordion_item:hover .icon,
+.accordion_wrap ul li.bike.active .icon{
+	background-position: -57px -96px;
+}
+
+.accordion_wrap ul li.car .accordion_item:hover .icon,
+.accordion_wrap ul li.car.active .icon{
+	background-position: -57px -141px;
+}
+
+.accordion_wrap ul li.train .accordion_item:hover .icon,
+.accordion_wrap ul li.train.active .icon{
+	background-position: -57px -178px;
+}
+
+.accordion_wrap ul li.aeroplane .accordion_item:hover .icon,
+.accordion_wrap ul li.aeroplane.active .icon{
+	background-position: -57px -224px;
+}
+
+.accordion_wrap ul li{
+	display: flex;
+}
+
+.accordion_menu{
+	width: 0px;
+	height: 175px;
+	background: #fffaeb;
+	color: #a48d2d;
+	overflow: hidden;
+	transition: width 0.2s ease;
+}
+
+.accordion_wrap ul li.active .accordion_menu{
+	width: 250px;
+}
+
+.accordion_menu .inner_am{
+	padding: 15px;
+}
+
+.accordion_menu .title{
+	font-weight: 600;
+}
+
+.accordion_menu .content{
+	font-size: 13px;
+	font-weight: 300;
+	margin: 10px 0;
+}
+
+.accordion_menu .view_more{
+	padding: 5px;
+	background: #a48d2d;
+	color: #fffaeb;
+	width: 125px;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.accordion_menu .view_more:hover{
+	text-decoration: underline;
+}
