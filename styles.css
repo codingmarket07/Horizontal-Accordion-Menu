@@ -150,7 +150,7 @@ body{
 	transition: width 0.2s ease;
 }
 
-.accordion_wrap ul li.active .accordion_menu{
+.accordion_wrap ul li.hover .accordion_menu{
 	width: 250px;
 }
 
