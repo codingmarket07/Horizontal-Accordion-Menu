@@ -2,7 +2,7 @@ var li_items = document.querySelectorAll(".accordion_wrap ul li");
 var ul = document.querySelector(".accordion_wrap ul");
 
 li_items.forEach(function(item){
-	item.addEventListener("click", function(){
+	item.addEventListener("moseover", function(){
 		li_items.forEach(function(item){
 			item.classList.remove("active");
 		})
